@@ -10,13 +10,13 @@ const { showActionSheetWithOptions } = useActionSheet();
 const router = useRouter();
   
     const onPress = () => {
-        const options = ['About', 'Logout', 'Cancel'];
+        const options = ['Sobre', 'Sair', 'Cancelar'];
         
         const cancelButtonIndex = 2;
     
         showActionSheetWithOptions({
           options,
-          cancelButtonIndex,
+          cancelButtonIndex
           
         }, (selectedIndex?: number) => {
           switch (selectedIndex) {
