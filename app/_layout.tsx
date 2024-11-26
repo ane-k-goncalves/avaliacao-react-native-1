@@ -1,6 +1,7 @@
 import { Stack } from "expo-router";
 import Menu from "../src/components/Menu";
 import { ActionSheetProvider } from "@expo/react-native-action-sheet";
+import MenuSobre from "../src/components/MenuSobre";
 
 export default function _layout() {
   return (
@@ -27,7 +28,7 @@ export default function _layout() {
           name="sobre"
           options={{
             headerTitle: "Sobre",
-            headerRight: () => <Menu />,
+            headerRight: () => <MenuSobre />,
             headerLeft: () => false,
             headerStyle: { backgroundColor: "#3652AD" },
             headerTitleAlign: "center",
